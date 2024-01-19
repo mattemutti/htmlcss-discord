@@ -1,32 +1,28 @@
-
-
-*{
-
-}
+* {}
 
 
 
 
 /* #region common  -------------------------------------------------------------------------------------*/
 
-:root{
+:root {
     --discord-primary: #3161e0FF;
     --discord-text: #23272aFF;
     --discord-light: #f6f6f6FF;
     --discord-lighter: white;
 
 
-    --dis-bg-heade:#add8e6FF;
+    --dis-bg-heade: #add8e6FF;
     --dis-bg-nav: #daa520FF;
     --dis-bg-img: #00008bFF;
-    --di-bg-concen:#ee82eeFF;
-    --dis-bg-boxsx:#1e90ffFF;
+    --di-bg-concen: #ee82eeFF;
+    --dis-bg-boxsx: #1e90ffFF;
     --dis-bg-boxdx: #ffc0cbFF;
     --dis-bg-navout: #23272aFF;
     --dis-bg-navout2: #20b2aaFF;
 }
 
-body{
+body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -41,9 +37,13 @@ body{
 */
 
 
-.debug{
-    
+.debug {}
+
+p{
+    font-size: 80%;
 }
+
+
 
 
 
@@ -54,29 +54,36 @@ body{
 
 /* #region Utility -------------------------------------------------------------------------------------*/
 
-.container{
+.container {
     display: flex;
     width: 80%;
-	max-width: 1200px;
-	margin: auto;
-	height: 100;
+    max-width: 1200px;
+    margin: auto;
+    height: 100;
 }
 
-.disp-flex{
+.container-small {
+    width: 50%;
+    max-width: 500px;
+    margin: 2rem auto;
+}
+
+.disp-flex {
     display: flex;
 }
 
-.justify-content{
+.justify-content {
     justify-content: center;
 }
 
-.justify-between{
+.justify-between {
     justify-content: space-between;
 
 }
-
-
 /* Utility che centra il contenuto di una flex box */
+
+
+
 
 
 
@@ -86,110 +93,168 @@ body{
 
 /* #region header -------------------------------------------------------------------------------------*/
 
-#site-header{
+#site-header {
     background-color: var(--discord-primary);
     padding-top: 1rem;
     padding-bottom: 2rem;
     border-bottom: 0.2px white solid;
 }
 
-.nav{
+.nav {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.logo{
-    flex-grow: 1;    
+.logo {
+    flex-grow: 1;
 }
 
-.link{
+.link {
     flex-grow: 3;
 }
 
-.login{
+.login {
     flex-grow: 1;
-    text-align: right;  
+    text-align: right;
 }
 
-#accedi{
+#accedi {
     background-color: var(--discord-lighter);
     padding: 0.7rem;
     border-radius: 20px;
     font-family: 'Roboto', sans-serif;
 }
 
-.list{
+.list {
     list-style: none;
     color: var(--discord-light);
 }
+
 /* #endregion header*/
 
 
 /* #region main -------------------------------------------------------------------------------------*/
 
+#site-main {}
 
-#site-main{
 
-}
+/* #region jumbo section ----------------------------------*/
 
-.bg-img{
-    height: 100%;
-    width: 100%;
+
+
+
+.bg-img {
+    height: 400px;
     background: url(../img/jumbo.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
-.container-central{
+/* tag per gestire l'immagine------*/
+
+
+.container-central {
+    display: flex;
+    flex-direction: column;
     text-align: center;
-    border: rgb(169, 195, 5) 1px dashed;
-    background-color: var(--di-bg-concen);
-    height: 150px;
+    padding: 50px;
+    margin-bottom: 0;
+    padding-bottom: 0;
+
 }
 
-.box1{
+h1{
+    margin: 0px;
+}
+
+.button-software {
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.app {
+    padding: 1rem;
+    border-radius: 30px;
+    background-color: var(--discord-light);
+    color: var(--discord-text);
+    border: none;
+}
+
+.browser {
+    padding: 1rem;
+    border-radius: 30px;
+    background-color: var(--discord-text);
+    color: var(--discord-lighter);
+    border: none;
+}
+
+
+/* #endregion jumbo section ----------------------------------*/
+
+
+.box1 {
     padding-top: 5rem;
     padding-bottom: 5rem;
     background-color: white;
-    
 }
 
-.box2{
-    padding-top: 5rem;
-    padding-bottom: 5rem;
-    background-color: rgb(198, 193, 193);
-    
-}
-
-.box1-flex{
+.box1-flex {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.box-img{
+.box-img1 {
     height: 300px;
-    width: 250px;
-    border: black 1px dashed;
-    flex-grow: 2;
-    background-color: var(--dis-bg-boxsx);
+    background-image: url(../img/item1.svg);
+    background-size: 70%;
+    background-repeat: no-repeat;
+    background-position: center;
+    flex-grow: 3;
+   
 }
 
-.box-text{
+.box-text {
     height: 300px;
-    width: 80px;
-    border: black 1px dashed;
+    width: 10px;
     flex-grow: 1;
-    background-color: var(--dis-bg-boxdx);
 }
 
-.bg-img-out{
-    background-color:  rgb(198, 193, 193);
+
+.box-img2 {
+    height: 300px;
+    background-image: url(../img/item2.svg);
+    background-size: 70%;
+    background-repeat: no-repeat;
+    background-position: center;
+    flex-grow: 3;
+   
+}
+
+.box2 {
+    background-image: url(../img/wave.svg);
     padding-top: 5rem;
     padding-bottom: 5rem;
-    
+    background-color: rgb(198, 193, 193);
 }
 
-.img-out-centre{
+
+
+
+
+
+
+.bg-img-out {
+    background-color: rgb(198, 193, 193);
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+
+}
+
+.img-out-centre {
     text-align: center;
     border: rgb(169, 195, 5) 1px dashed;
     background-color: green;
@@ -201,32 +266,32 @@ body{
 
 /* #region footer  -------------------------------------------------------------------------------------*/
 
-#site-footer{
+#site-footer {
     background-color: var(--dis-bg-navout);
     padding-top: 1rem;
     padding-bottom: 3rem;
 }
 
-.nav-footer{
-    display: flex;  
-    
+.nav-footer {
+    display: flex;
+
 }
 
-.link-footer1{
+.link-footer1 {
     flex-grow: 2;
     height: 300px;
     border: 1px black dashed;
     background-color: var(--dis-bg-boxdx);
 }
 
-.link-footer2{
+.link-footer2 {
     flex-grow: 1;
     height: 300px;
     border: 1px black dashed;
     background-color: var(--dis-bg-navout2);
 }
 
-.out{
+.out {
     display: flex;
     justify-content: space-between;
     background-color: var(--dis-bg-navout2);
@@ -234,20 +299,20 @@ body{
     padding-bottom: 1rem;
 }
 
-.logo-out{
+.logo-out {
     background-color: var(--dis-bg-boxdx);
     border: 1px black dashed;
     text-align: center;
 }
 
-.button-out{
-    background-color:  var(--dis-bg-boxdx);
+.button-out {
+    background-color: var(--dis-bg-boxdx);
     border: 1px black dashed;
     text-align: center;
 }
 
 
-.line{
+.line {
     border-top: 1px white sollid;
     padding-top: 2rem;
 }
