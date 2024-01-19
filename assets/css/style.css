@@ -43,13 +43,11 @@ p{
     font-size: 80%;
 }
 
+/*
 h1{
     margin: 0px;
 }
-
-h3{
-    
-}
+*/
 
 
 
@@ -75,6 +73,17 @@ h3{
     margin: 2rem auto;
     margin-top: 0;
 }
+/*containre con margini top a zero__*/
+
+
+
+.container-small2 {
+    width: 50%;
+    max-width: 500px;
+    margin: 2rem auto;
+}
+
+/*container con margini regolari---*/
 
 .disp-flex {
     display: flex;
@@ -230,16 +239,13 @@ h3{
 /* #endregion jumbo section ----------------------------------*/
 
 
-.box1 {
-        
-}
 
 .box1-flex {
     display: flex;
-    justify-content: center;
     align-items: center;
 }
 
+/*
 .box-img1 {
     height: 500px;
     background-image: url(../img/item1.svg);
@@ -247,14 +253,14 @@ h3{
     background-repeat: no-repeat;
     background-position: center;
     flex-grow: 3;   
-}
+} */
 
 .box-text {
     width: 1%;
     flex-grow: 1;
 }
 
-
+/*
 .box-img2 {
     height: 300px;
     background-image: url(../img/item2.svg);
@@ -264,7 +270,8 @@ h3{
     flex-grow: 3;
    
 }
-
+*/
+ /*
 .box2 {
     padding-bottom: 10rem;
 }
@@ -272,6 +279,9 @@ h3{
 .box3{
     padding-bottom: 10rem;
 }
+*/
+
+/*
 .box-img3 {
     height: 300px;
     background-image: url(../img/item3.svg);
@@ -279,24 +289,25 @@ h3{
     background-repeat: no-repeat;
     background-position: center;
     flex-grow: 3;
-   
 }
-
+*/
+ /*
 .bg-img-out {
     padding-top: 5rem;
     padding-bottom: 5rem;
 }
+*/
 
+/*
 .img-out-centre {
     text-align: cener;
-
-    
     height: 500px;
     background-image: url(../img/item4-big.svg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
 }
+*/
 
 .title-end{
     text-align: center;
@@ -318,27 +329,22 @@ h3{
 
 }
 
+/*
 .flag{
     background-image: url(../img/ita.png);
     background-repeat: no-repeat;
     background-size: 20%;
     height: 2rem;   
-
 }
+*/
 
 
 .link-footer1 {
     flex-grow: 2;
-    
-    
-
 }
 
 .link-footer2 {
-    flex-grow: 1;
-    
-    
-    
+    flex-grow: 1;  
 }
 
 .out {
@@ -349,8 +355,6 @@ h3{
     padding-bottom: 1rem;
 }
 
-.logo-out {
-}
 
 .butt-rec {
     background-color: var(--discord-primary);
@@ -373,7 +377,6 @@ h3{
 
 .lang-ita{
     color: var(--discord-lighter);
-    align-items: center;
 }
 
 /* #endregion footer */
