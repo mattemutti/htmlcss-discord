@@ -140,13 +140,25 @@ h3{
     background-color: var(--discord-lighter);
     padding: 0.7rem;
     border-radius: 20px;
-    font-family: 'Roboto', sans-serif;
+    border: none;
 }
 
 .list {
     list-style: none;
     color: var(--discord-light);
 }
+
+.list-footer {
+    list-style: none;
+    color: var(--discord-light);
+    
+}
+
+.text-blue{
+    color: var(--discord-primary);
+}
+
+
 
 /* #endregion header*/
 
@@ -270,22 +282,16 @@ h3{
    
 }
 
-
-
-
-
-
 .bg-img-out {
     padding-top: 5rem;
     padding-bottom: 5rem;
-
 }
 
 .img-out-centre {
     text-align: cener;
 
     
-    height: 400px;
+    height: 500px;
     background-image: url(../img/item4-big.svg);
     background-size: cover;
     background-repeat: no-repeat;
@@ -303,54 +309,71 @@ h3{
 /* #region footer  -------------------------------------------------------------------------------------*/
 
 #site-footer {
-    background-color: var(--dis-bg-navout);
+    background-color: var(--discord-text);
     padding-top: 1rem;
     padding-bottom: 3rem;
 }
 
 .nav-footer {
-    display: flex;
 
 }
 
+.flag{
+    background-image: url(../img/ita.png);
+    background-repeat: no-repeat;
+    background-size: 20%;
+    height: 2rem;   
+
+}
+
+
 .link-footer1 {
     flex-grow: 2;
-    height: 300px;
-    border: 1px black dashed;
-    background-color: var(--dis-bg-boxdx);
+    
+    
+
 }
 
 .link-footer2 {
     flex-grow: 1;
-    height: 300px;
-    border: 1px black dashed;
-    background-color: var(--dis-bg-navout2);
+    
+    
+    
 }
 
 .out {
     display: flex;
     justify-content: space-between;
-    background-color: var(--dis-bg-navout2);
+    border-top: 1px var(--discord-primary) solid;
     padding-top: 1rem;
     padding-bottom: 1rem;
 }
 
 .logo-out {
-    background-color: var(--dis-bg-boxdx);
-    border: 1px black dashed;
-    text-align: center;
 }
 
-.button-out {
-    background-color: var(--dis-bg-boxdx);
-    border: 1px black dashed;
+.butt-rec {
+    background-color: var(--discord-primary);
+    color: var(--discord-lighter);
     text-align: center;
+    padding: 0.7rem;
+    border-radius: 20px;
+    border: none;
 }
 
 
 .line {
     border-top: 1px white sollid;
     padding-top: 2rem;
+}
+
+.link-recap{
+    flex-direction: column;
+}
+
+.lang-ita{
+    color: var(--discord-lighter);
+    align-items: center;
 }
 
 /* #endregion footer */
