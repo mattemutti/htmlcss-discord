@@ -66,6 +66,7 @@ p{
     width: 50%;
     max-width: 500px;
     margin: 2rem auto;
+    margin-top: 0;
 }
 
 .disp-flex {
@@ -243,7 +244,7 @@ h1{
 .box2 {
     padding-bottom: 10rem;
 }
-    
+
 .box3{
     padding-bottom: 10rem;
 }
