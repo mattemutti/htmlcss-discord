@@ -1,12 +1,21 @@
-body{
-    margin: 0;
+
+
+*{
+
 }
 
 
 
-/* #region rule common  */
+
+/* #region common  -------------------------------------------------------------------------------------*/
 
 :root{
+    --discord-primary: #3161e0FF;
+    --discord-text: #23272aFF;
+    --discord-light: #f6f6f6FF;
+    --discord-lighter: white;
+
+
     --dis-bg-heade:#add8e6FF;
     --dis-bg-nav: #daa520FF;
     --dis-bg-img: #00008bFF;
@@ -17,58 +26,104 @@ body{
     --dis-bg-navout2: #20b2aaFF;
 }
 
-.plr-section{
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* sistemato con  margin: auto e percentuale del contenitore! Vedi .container
+.plr-sectin{
     padding-left: 5rem;
     padding-right: 5rem;
 }
+*/
+
 
 .debug{
-    background-color: red;
+    
 }
-/* classe che serve solo di riempimento*/
+
+
+
+
 
 /* #endregion rule common  */
 
 
+/* #region Utility -------------------------------------------------------------------------------------*/
 
-/* #region header */
+.container{
+    display: flex;
+    width: 80%;
+	max-width: 1200px;
+	margin: auto;
+	height: 100;
+}
+
+.justify-content{
+    justify-content: center;
+}
+
+.justify-between{
+    justify-content: space-between;
+
+}
+
+
+/* Utility che centra il contenuto di una flex box */
+
+
+
+
+/* #endregion Utility */
+
+
+/* #region header -------------------------------------------------------------------------------------*/
 
 #site-header{
-    background-color: var(--dis-bg-heade);
+    background-color: var(--discord-primary);
     padding-top: 1rem;
-    padding-bottom: 1rem;;
+    padding-bottom: 1rem;
+    margin-bottom: 1px white solid;
 }
 
 .nav{
     display: flex;
     justify-content: center;
-   background-color: var(--dis-bg-nav);
+    align-items: center;
 }
 
 .logo{
-    flex-grow: 1;
-    text-align: left;
-    border: 1px black dashed;
-    
+    flex-grow: 1;    
 }
 
 .link{
     flex-grow: 3;
-    text-align: center;
-    border: 1px black dashed;
 }
 
 .login{
     flex-grow: 1;
-    text-align: right;
-    border: 1px black dashed;
+    text-align: right;  
 }
 
+#accedi{
+    background-color: var(--discord-lighter);
+    padding: 0.7rem;
+    border-radius: 20px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.list{
+    list-style: none;
+    color: var(--discord-light);
+}
 /* #endregion header*/
 
 
+/* #region main -------------------------------------------------------------------------------------*/
 
-/* #region main */
 
 #site-main{
     background-color: blue;
@@ -143,8 +198,7 @@ body{
 /* #endregion main */
 
 
-
-/* #region footer  */
+/* #region footer  -------------------------------------------------------------------------------------*/
 
 #site-footer{
     background-color: var(--dis-bg-navout);
