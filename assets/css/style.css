@@ -43,6 +43,13 @@ p{
     font-size: 80%;
 }
 
+h1{
+    margin: 0px;
+}
+
+h3{
+    
+}
 
 
 
@@ -83,7 +90,16 @@ p{
 }
 /* Utility che centra il contenuto di una flex box */
 
+.buttom-centre{
+    justify-content: center;
+    margin: 2rem;
+}
 
+.stars{
+    background-image: url(../img/stars.svg);
+    background-repeat: no-repeat;
+
+}
 
 
 
@@ -176,10 +192,6 @@ p{
 
 }
 
-h1{
-    margin: 0px;
-}
-
 .button-software {
     align-items: center;
     justify-content: center;
@@ -264,17 +276,25 @@ h1{
 
 
 .bg-img-out {
-    background-color: rgb(198, 193, 193);
     padding-top: 5rem;
     padding-bottom: 5rem;
 
 }
 
 .img-out-centre {
-    text-align: center;
-    border: rgb(169, 195, 5) 1px dashed;
-    background-color: green;
+    text-align: cener;
+
+    
     height: 400px;
+    background-image: url(../img/item4-big.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.title-end{
+    text-align: center;
+    padding: 2rem;
 }
 
 /* #endregion main */
